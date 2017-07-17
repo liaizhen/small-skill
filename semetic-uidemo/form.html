@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="semantic/dist/semantic.css">
+    <title>form</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+    <form class="ui form">
+      <div class="field">
+        <label for="">First Name</label>
+        <input type="text" name="first-name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label for="">Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" class="" tabindex="0">
+          <label for="">I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>   
+    <hr>
+    <form action="" class="ui form">
+      <div class="fields">
+        <div class="field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+        <div class="field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+        <div class="field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+      </div>
+    </form>
+    <form action="" class="ui form">
+      <div class="three fields">
+        <div class="field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+        <div class="field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+        <div class="field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+      </div>
+    </form>
+    <form action="" class="ui form">
+      <div class="inline fields">
+        <div class="eight field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+        <div class="three field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+        <div class="five field">
+          <label for="">First name</label>
+          <input type="text" placeholder="First Name">
+        </div>
+      </div>
+    </form>
+    <!--<form action="" class="ui form">
+      <div class="field">
+        <label for="">Text</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="field">
+        <label for="">Text</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+    </form>-->
+    <form action="" class="ui form">
+      <div class="inline field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label for="">复选框</label>
+        </div>
+      </div>
+      <div class="inline field">
+        <div class="ui slider checkbox">
+           <input type="checkbox" tabindex="0" class="hidden">
+          <label for="">slider</label>
+        </div>
+      </div>
+      <div class="inline field">
+        <div class="ui toggle checkbox">
+           <input type="checkbox" tabindex="0" class="hidden">
+          <label for="">toggle</label>
+        </div>
+      </div>
+    </form>
+    <!--radio-->
+    <form action="" class="ui form">
+      <div class="inline fields">
+          <label for="fruit">Select your favorite fruit:</label>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label for="">Apples</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label for="">Oranges</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label for="">Grapefruit</label>
+            </div>
+          </div>
+      </div>
+      <div class="grouped fields">
+         <label for="fruit">Select your second favorite fruit:</label>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label for="">Apples</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label for="">Oranges</label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui radio checkbox">
+              <input type="radio" name="fruit" tabindex="0" class="hidden">
+              <label for="">Grapefruit</label>
+            </div>
+          </div>
+      </div>
+      </div>
+    </form>
+    <!--dropdown-->
+    <!--<div class="ui form">
+      <div class="field">
+        <label for="">Gender</label>
+        <div class="ui selection dropdown">
+          <input type="hidden" name="gender">
+          <i class="dropdown icon"></i>
+          <div class="default text">sex</div>
+          <div class="menu">
+            <div class="item">Male</div>
+            <div class="item">Female</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui form">
+      <div class="field">
+        <label for="">Gender</label>
+        <select class="ui search dropdown">
+          <option value="">Select Country</option>
+          <option value="AF">Afghanistan</option>
+          <option value="AX">Åland Islands</option>
+          <option value="AL">Albania</option>
+          <option value="DZ">Algeria</option>
+          <option value="AS">American Samoa</option>
+        </select>
+      </div>
+    </div>-->
+    <form class="ui form">
+      <div class="field">
+        <label for="">Gender</label>
+        <div class="ui dropdown selection multiple" tabindex="0">
+          <select multiple="">
+          <option value="">Select Country</option>
+          <option value="AF">Afghanistan</option>
+          <option value="AX">Åland Islands</option>
+          <option value="AL">Albania</option>
+          <option value="DZ">Algeria</option>
+          <option value="AS">American Samoa</option>
+        </select>
+        <i class="dropdown icon"></i>
+        <div class="default text">Select Country</div>
+        <div class="menu transition hidden" tabindex="-1">
+            <div class="item" data-value="AF">Afghanistan</div>
+            <div class="item" data-value="AX">Åland Islands</div>
+            <div class="item" data-value="AL">Albania</div>
+            <div class="item " data-value="DZ">Algeria</div>
+            <div class="item" data-value="AS">American Samoa</div>
+            <div class="item" data-value="AD">Andorra</div>
+        </div>
+      </div>
+      </form>
+      <!--message-->
+      <div class="ui form success">
+        <div class="field">
+          <label for="">E-mail</label>
+          <input type="email" placeholder="joe@schmoe.com">
+        </div>
+        <div class="ui success message">
+          <div class="header">Form Completed</div>
+          <p>You're all signed up for the newsletter.</p>
+        </div>
+        <div class="ui submit button">Submit</div>
+      </div>
+    
+    <div class="ui form error">
+        <div class="field">
+          <label for="">E-mail</label>
+          <input type="email" placeholder="joe@schmoe.com">
+        </div>
+        <div class="ui error message">
+          <div class="header">Form Completed</div>
+          <p>You're all signed up for the newsletter.</p>
+        </div>
+        <div class="ui submit button">Submit</div>
+      </div>
+      <form action="" class="ui form">
+        <div class="two fields">
+          <div class="field error">
+            <label for="">First Name</label>
+            <input placeholder="First Name" type="text">
+          </div>
+         <div class="field">
+            <label for="">Last Name</label>
+            <input placeholder="Last Name" type="text">
+          </div>
+        </div>
+        <div class="field error">
+          <label>Gender</label>
+          <div class="ui selection dropdown">
+            <div class="default text">Select</div>
+            <i class="dropdown icon"></i>
+            <input type="hidden" name="gender">
+            <div class="menu">
+              <div class="item" data-value="male">Male</div>
+              <div class="item" data-value="Female">Female</div>
+            </div>
+          </div>
+          </div>
+          <div class="inline field error">
+            <div class="ui checkbox">
+              <input type="checkbox" tabindex="0" class="hidden">
+              <label>I agree to the Terms and Conditions</label>
+            </div>
+          </div>
+        
+      </form>
+       <form action="" class="ui form">
+        <div class="two fields">
+          <div class="field">
+            <label for="">First Name</label>
+            <input placeholder="First Name" readonly type="text">
+          </div>
+         <div class="field">
+            <label for="">Last Name</label>
+            <input placeholder="Last Name" type="text" readonly>
+          </div>
+        </div>
+      </form>
+      <div class="ui equal width form">
+          <div class="fields">
+            <div class="field">
+              <label>Username</label>
+              <input type="text" placeholder="Username">
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password">
+            </div>
+          </div>
+          <div class="fields">
+            <div class="field">
+              <label>First name</label>
+              <input type="text" placeholder="First Name">
+            </div>
+            <div class="field">
+              <label>Middle name</label>
+              <input type="text" placeholder="Middle Name">
+            </div>
+            <div class="field">
+              <label>Last name</label>
+              <input type="text" placeholder="Last Name">
+            </div>
+          </div>
+      </div>
+      <div class="ui inverted segment">
+        <div class="ui inverted form">
+          <div class="two fields">
+            <div class="field">
+                <label>First Name</label>
+                <input placeholder="First Name" type="text">
+            </div>
+            <div class="field">
+                <label>First Name</label>
+                <input placeholder="First Name" type="text">
+            </div>
+          </div>
+          <div class="inline field">
+              <div class="ui checkbox">
+                 <input type="checkbox" tabindex="0" class="hidden">
+                 <label>I agree to the terms and conditions</label>
+              </div>
+          </div>
+          <div class="ui submit button">Submit</div>
+        </div>
+      </div>
+       <div class="ui inverted segment">
+        <div class="ui inverted form">
+          <div class="two fields">
+            <div class="required field">
+                <label>First Name</label>
+                <input placeholder="First Name" type="text">
+            </div>
+            <div class="required field">
+                <label>First Name</label>
+                <input placeholder="First Name" type="text">
+            </div>
+          </div>
+          <div class="inline required field">
+              <div class="ui checkbox">
+                 <input type="checkbox" tabindex="0" class="hidden">
+                 <label>I agree to the terms and conditions</label>
+              </div>
+          </div>
+          <div class="ui submit button">Submit</div>
+        </div>
+      </div>
+      <div class="ui form">
+          <div class="three fields">
+          <div class="field">
+            <label>First name</label>
+            <input type="text" placeholder="First Name">
+          </div>
+          <div class="field">
+            <label>Middle name</label>
+            <input type="text" placeholder="Middle Name">
+          </div>
+          <div class="field">
+            <label>Last name</label>
+            <input type="text" placeholder="Last Name">
+          </div>
+          </div>
+        </div>
+        <div class="ui top attached button"><font><font>网格前按钮</font></font></div>
+
+  </body>   
+  <script>
+   
+    </script> 
+</html>

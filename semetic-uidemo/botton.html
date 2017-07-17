@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="semantic/dist/semantic.css">
+    <title>button</title>
+    <style>
+    .ui.button.toggle.active, .ui.buttons .button.toggle.active, .ui.toggle.buttons .active.button {
+    background-color: #21BA45!important;
+    box-shadow: none!important;
+    text-shadow: none;
+    color: #FFF!important;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+       <button class="ui button">按钮</button> 
+       <div class="ui button" tabindex="0">按钮</div> 
+       <button class="ui primary button">save</button>
+        <button class="ui secondary button">reset</button>
+        <div class="ui animated fade button">
+          <div class="visible content">Next</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </div>
+        <div class="ui animated vertical button">
+          <div class="visible content">Sign-up for a Pro account</div>
+          <div class="hidden content">
+            $12.99 a month
+          </div>
+        </div>
+        <div class="ui animated button">
+          <div class="visible content">Shop</div>
+          <div class="hidden content">
+            <i class="shop icon"></i>
+          </div>
+        </div>
+        <hr>
+        <div class="ui labeled button" tabindex="0">
+          <div class="ui button">
+            <i class="heart icon"></i>
+            Like
+          </div>
+          <a href="" class="ui basic label">2,048</a>
+        </div>
+        <div class="ui left labeled  button" tabindex="0">
+          <a href="" class="ui basic right pointing label">2,048</a>
+          <div class="ui button">
+            <i class="heart icon"></i>
+            Like
+          </div>
+         
+        </div>
+        <div class="ui left labeled  button" tabindex="0">
+          <a href="" class="ui basic label">1,024</a>
+          <div class="ui icon button">
+            <i class="fork icon"></i>
+          </div>
+        </div>
+        <div class="ui labeled  button" tabindex="0">
+          <div class="ui red button">
+            <i class="heart icon"></i>
+            Like
+          </div>
+          <a href="" class="ui basic red left pointing label">2,048</a>
+        </div>
+        <div class="ui labeled  button" tabindex="0">
+          <div class="ui basic red button">
+            <i class="fork icon"></i>
+            Forks
+          </div>
+          <a href="" class="ui basic red left pointing label">1,024</a>
+        </div>
+        <hr>
+        <button class="ui icon button">
+          <i class="heart icon"></i>
+        </button>
+        <button class="ui labeled icon button">
+          <i class="pause icon"></i>pause
+        </button>
+        </div>
+        <hr>
+        <button class="ui basic button"><i class="user icon"></i>Add Friend</button>
+         <button class="ui basic secondary button">Add Friend</button>
+        <button class="ui basic positive button">Add Friend</button>
+        <button class="ui basic negative button">Add Friend</button>
+        <button class="ui basic primary button">Add Friend</button>
+        <button class="ui basic red button">Add Friend</button>
+        <button class="ui basic orange button">Add Friend</button>
+        <div class="ui inverted vertical segment">
+          <button class="ui inverted button">standard</button>
+          <button class="ui inverted red button">standard</button>
+           <button class="ui inverted yellow button">standard</button>
+          <button class="ui inverted purple button">standard</button>
+        </div>
+        <div class="ui inverted vertical segment">
+          <button class="ui inverted basic button">standard</button>
+          <button class="ui inverted basic red button">standard</button>
+           <button class="ui inverted basic yellow button">standard</button>
+          <button class="ui inverted basic purple button">standard</button>
+        </div>
+        <hr>
+        <div class="ui buttons">
+          <button class="ui  button"><i class="align left icon"></i></button>
+          <button class="ui  button"><i class="align center icon"></i></button>
+          <button class="ui  button"><i class="align right icon"></i></button>
+        </div>
+        <div class="ui icon buttons">
+          <button class="ui  button"><i class="bold icon"></i></button>
+          <button class="ui  button"><i class="underline icon"></i></button>
+          <button class="ui  button"><i class="text width icon"></i></button>
+        </div>
+        <hr>
+        <div class="ui buttons">
+          <button class="ui button">Cancel</button>
+          <div class="or"></div>
+          <button class="ui positive button">Save</button>
+        </div>
+         <div class="ui buttons">
+          <button class="ui button">Cancel</button>
+          <div class="or" data-text="ou"></div>
+          <button class="ui positive button">Save</button>
+        </div>
+        <hr>
+        <button class="ui active button"><i class="user icon"></i>Follow</button>
+         <button class="ui disabled button"><i class="user icon"></i>Follow</button>
+         <button class="ui loading button"><i class="user icon"></i>Follow</button>
+         <hr>
+         <button class="ui facebook button"><i class="facebook icon"></i>Facebook</button>
+         <button class="ui google plus button"><i class="google plus icon"></i>Google</button>
+         <button class="ui twitter button"><i class="twitter icon"></i>Twitter</button>
+         <!--font-size-->
+         <hr>
+          <button class="massive ui  button">1</button>
+          <button class="huge ui  button">1</button>
+          <button class="big ui  button">1</button>
+          <button class="large ui  button">1</button>
+          <button class="medium ui  button">1</button>
+          <button class="small ui  button">1</button>
+          <button class="tiny ui  button">1</button>
+          <button class="mini ui  button">1</button>
+          <!--floated-->
+          <hr>
+          <button class="ui floated right button">right</button>
+          <button class="ui floated left button">left</button>
+          <hr>
+          <!--compact-->
+          <button class="ui button">Hold</button>
+          <button class="ui icon button"><i class="pause icon"></i></button>
+          <button class="ui labeled compact icon button"><i class="pause icon"></i>Pause</button>
+          <hr>
+          <button class="ui toggle button" onclick="show(this)">Vote </button>
+          <button class="positive ui  button">Vote </button>
+          <button class="negative ui  button">Vote </button>
+          <button class="circular ui icon  button"><i class="pause icon"></i> </button>
+          <hr>
+          <button class="fluid ui  button">Fluid </button>
+          <div class="ui top attached button" tabindex="0">Top</div>
+          <div class="ui bottom attached button" tabindex="0">Bottom</div>
+          <hr>  
+          <button class="ui left attached labeled button">left</button>
+          <button class="right attached labeled ui button">right</button>
+          <hr>
+          <div class="ui vertical buttons">
+            <button class="ui button">1</button>
+            <button class="ui button">2</button>
+            <button class="ui button">3</button>
+            <button class="ui button">4</button>
+          </div>
+          <div class="ui icon buttons">
+            <button class="ui button"><i class="play icon"></i></button>
+            <button class="ui button"><i class="pause icon"></i></button>
+            <button class="ui button"><i class="shuffle icon"></i></button>
+          </div>
+          <hr>
+          <div class="ui vertical labeled icon buttons">
+            <button class="ui button"><i class="play icon"></i>play</button>
+            <button class="ui button"><i class="pause icon"></i>pause</button>
+            <button class="ui button"><i class="shuffle icon"></i>shuffle</button>
+          </div>
+          <hr>
+           <div class="ui buttons">
+            <button class="ui icon labeled button"><i class="left chevron icon"></i>Back</button>
+    
+            <button class="ui button"><i class="stop icon"></i>Stop</button>
+           
+            <button class=" ui icon right labeled button"><i class="right chevron icon"></i>Forward</button>
+          </div>
+</body>
+      <script>
+      function show(b){
+      $(b).toggleClass("active");
+      }
+      </script>
+</html>

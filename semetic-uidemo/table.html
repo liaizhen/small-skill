@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="semantic/dist/semantic.css">
+    <title>menu</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+     <div class="ui message">
+         <div class="header">Changes in Service </div>
+         <p>We just updated our privacy policy here to better service our customers. We recommend reviewing the changes.</p>
+     </div>
+     <div class="ui message">
+         <div class="header"></div>
+         <ul class="list">
+            <li>You can now have cover images on blog pages</li>
+            <li>Drafts will now auto-save while writing</li>
+         </ul>
+     </div>
+     <div class="ui icon message">
+        <i class="inbox icon"></i>
+        <div class="content">
+          <div class="header">Have you heard about our mailing list?</div>
+          <p>Get the best news in your e-mail every day.</p>
+        </div>
+     </div>
+     <div class="ui message">
+        <i class="close icon"></i>
+        <div class="header">Welcome back! </div>
+        <p>This is a special notification which you can dismiss if you're bored with it.</p>
+      </div>
+     <div class="ui attached message">
+        <div class="header">Welcome to our site! </div>
+        <p>Fill out the form below to sign-up for a new account</p>
+     </div>
+     <form action="" class="ui form attached fluid segment">
+        <div class="two fields">
+            <div class="field">
+                <label for="">First name</label>
+                <input placeholder="First Name" name="first-name" type="text">
+            </div>
+            <div class="field">
+                <label for="">Last name</label>
+                <input placeholder="Last name" type="text" name="last-name">
+            </div>
+        </div>
+        <div class="field">
+          <label>Username</label>
+          <input placeholder="Username" type="text">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password">
+        </div>
+        <div class="inline field">
+          <div class="ui checkbox">
+            <input type="checkbox" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+        </div>
+        <div class="ui blue submit button">Submit</div>
+     </form>
+     <div class="ui bottom attached warning message">
+       <i class="icon help"></i> Already signed up? <a href="#">Login here</a> instead. 
+     </div>
+       <table class="ui celled table">
+            <thead>
+               <tr>
+                 <th>标题</th>
+                <th>标题</th>
+                <th>标题</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>
+                    <div class="ui ribbon label">First</div>
+                  </td>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+                <tr>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                  <td>Cell</td>
+                </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                 <th colspan="3">
+                   <div class="ui right floated pagination menu">
+                      <a href="" class="icon item">
+                        <i class="left chevron icon"></i>
+                      </a>
+                      <a class="item">1</a>
+                      <a class="item">2</a>
+                      <a class="item">3</a>
+                      <a class="item">4</a>
+                      <a href="" class="icon item">
+                        <i class="right chevron icon"></i>
+                      </a>
+                   </div>
+                 </th>
+               </tr>
+            </tfoot>
+       </table>
+       <table class="ui celled padded table">
+          <thead>
+            <tr>
+              <th class="single line">Evidence Rating</th>
+              <th>Effect</th>
+              <th>Efficacy</th>
+              <th>Consensus</th>
+              <th>Comments</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <h2 class="ui center aligned header">A</h2>
+              </td>
+              <td class="single line">Power Output</td>
+              <td>
+                  <div class="ui star rating" data-rating="3" data-max-rating="3">
+                    <i class="icon active"></i>
+                     <i class="icon active"></i>
+                      <i class="icon active"></i>
+                  </div>
+              </td>
+              <td class="right aligned">80% <br> <a href="#">18 studies</a> </td>
+              <td>Creatine supplementation is the reference compound for increasing muscular creatine levels; there is variability in this increase, however, with some nonresponders.</td>
+            </tr>
+          </tbody>
+       </table>
+       <table class="ui very basic collapsing celled table">
+         <thead>
+            <tr>
+              <th>Employee</th>
+              <th>Correct Guesses</th>
+            </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>
+               <h4 class="ui image header">
+                 <img src="image/joe.jpg" class="ui mini rounded image">
+                  <div class="content">Lena <div class="sub header">Human Resources </div>
+                </div>
+               </h4>
+             </td>
+             <td>15</td>
+           </tr>
+         </tbody>
+       </table>
+        <table class="ui striped celled table">
+         <thead>
+            <tr>
+              <th colspan="3">Employee</th>
+            </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td class="collapsing">
+                <i class="folder icon"></i> node_modules
+             </td>
+              <td>Initial commit</td>
+            <td class="right aligned collapsing">10 hours ago</td>
+           </tr>
+            <tr>
+              <td><i class="file outline icon"></i> package.json </td>
+              <td>Initial commit</td>
+              <td class="right aligned">10 hours ago</td>
+            </tr>
+            <tr>
+         </tbody>
+       </table>
+      <table class="ui definition table">
+        <thead>
+          <tr><th></th>
+          <th>Arguments</th>
+          <th>Description</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>reset rating</td>
+            <td>None</td>
+            <td>Resets rating to default value</td>
+          </tr>
+          <tr>
+            <td>set rating</td>
+            <td>rating (integer)</td>
+            <td>Sets the current star rating to specified value</td>
+          </tr>
+      </tbody>
+      </table>
+      <table class="ui single line table">
+          <thead>
+             <tr>
+                <th><font><font>Name</font></font></th>
+                <th><font><font>注册日期</font></font></th>
+                <th><font><font>电子邮件地址</font></font></th>
+                <th><font><font>高级计划</font></font></th>
+             </tr>
+          </thead>
+          <tbody>
+            <td><font><font>约翰Lilki</font></font></td>
+            <td><font><font>2013年9月14日</font></font></td>
+            <td><font><font>jhlilk22@yahoo.com</font></font></td>
+            <td><font><font>没有</font></font></td>
+          </tbody>
+      </table>
+      <table class="ui fixed table">
+        <thead>
+          <tr><th><font><font>Name</font></font></th>
+          <th><font><font>状态</font></font></th>
+          <th><font><font>描述</font></font></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><font><font>约翰</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>约翰是一个有趣的男孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>杰米</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>杰米是一个善良的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>吉尔</font></font></td>
+            <td><font><font>被拒绝</font></font></td>
+            <td><font><font>吉尔是一个正常的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="ui fixed single line celled table">
+        <thead>
+          <tr><th><font><font>Name</font></font></th>
+          <th><font><font>状态</font></font></th>
+          <th><font><font>描述</font></font></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><font><font>约翰</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>约翰是一个有趣的男孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>杰米</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>杰米是一个善良的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>吉尔</font></font></td>
+            <td><font><font>被拒绝</font></font></td>
+            <td><font><font>吉尔是一个正常的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+        </tbody>
+      </table>
+       <table class="ui unstackable table">
+        <thead>
+          <tr><th><font><font>Name</font></font></th>
+          <th><font><font>状态</font></font></th>
+          <th><font><font>描述</font></font></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><font><font>约翰</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>约翰是一个有趣的男孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>杰米</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>杰米是一个善良的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>吉尔</font></font></td>
+            <td><font><font>被拒绝</font></font></td>
+            <td><font><font>吉尔是一个正常的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+        </tbody>
+      </table>
+       <table class="ui tablet stackable table">
+        <thead>
+          <tr><th><font><font>Name</font></font></th>
+          <th><font><font>状态</font></font></th>
+          <th><font><font>描述</font></font></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><font><font>约翰</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>约翰是一个有趣的男孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>杰米</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>杰米是一个善良的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>吉尔</font></font></td>
+            <td><font><font>被拒绝</font></font></td>
+            <td><font><font>吉尔是一个正常的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="ui selectable celled table">
+        <thead>
+          <tr><th><font><font>Name</font></font></th>
+          <th><font><font>状态</font></font></th>
+          <th><font><font>描述</font></font></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><font><font>约翰</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>约翰是一个有趣的男孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>杰米</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>杰米是一个善良的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>吉尔</font></font></td>
+            <td><font><font>被拒绝</font></font></td>
+            <td><font><font>吉尔是一个正常的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="ui selectable inverted celled table">
+        <thead>
+          <tr><th><font><font>Name</font></font></th>
+          <th><font><font>状态</font></font></th>
+          <th><font><font>描述</font></font></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><font><font>约翰</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>约翰是一个有趣的男孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>杰米</font></font></td>
+            <td><font><font>批准</font></font></td>
+            <td><font><font>杰米是一个善良的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+          <tr>
+            <td><font><font>吉尔</font></font></td>
+            <td><font><font>被拒绝</font></font></td>
+            <td><font><font>吉尔是一个正常的女孩，但有时你真的没有足够的空间来形容一切你想</font></font></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="ui sortable celled table">
+          <thead>
+              <tr>
+                <th class="sorted descending"><font><font>Name</font></font></th>
+                <th class=""><font><font class="">状态</font></font></th>
+                <th class=""><font><font>笔记</font></font></th>
+              </tr>
+          </thead>
+           <tbody>
+                  <tr>
+                  <td><font><font><font><font>约翰</font></font></font></font></td>
+                  <td><font><font><font><font>无动作</font></font></font></font></td>
+                  <td><font><font><font><font>没有</font></font></font></font></td>
+                </tr><tr>
+                  <td><font><font><font><font>杰米</font></font></font></font></td>
+                  <td class="positive"><font><font><font><font>批准</font></font></font></font></td>
+                  <td class="warning"><font><font><font><font>需要调用</font></font></font></font></td>
+                </tr><tr>
+                  <td><font><font><font><font>吉尔</font></font></font></font></td>
+                  <td class="negative"><font><font><font><font>被拒绝</font></font></font></font></td>
+                  <td><font><font><font><font>没有</font></font></font></font></td>
+                </tr></tbody>
+      </table>
+      <table class="ui sortable celled table">
+  <thead>
+    <tr>
+      <th class="sorted descending"><font><font>Name</font></font></th>
+      <th class=""><font><font class="">状态</font></font></th>
+      <th class=""><font><font>笔记</font></font></th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    
+    
+  <tr>
+      <td><font><font><font><font>约翰</font></font></font></font></td>
+      <td><font><font><font><font>无动作</font></font></font></font></td>
+      <td><font><font><font><font>没有</font></font></font></font></td>
+    </tr><tr>
+      <td><font><font><font><font>杰米</font></font></font></font></td>
+      <td class="positive"><font><font><font><font>批准</font></font></font></font></td>
+      <td class="warning"><font><font><font><font>需要调用</font></font></font></font></td>
+    </tr><tr>
+      <td><font><font><font><font>吉尔</font></font></font></font></td>
+      <td class="negative"><font><font><font><font>被拒绝</font></font></font></font></td>
+      <td><font><font><font><font>没有</font></font></font></font></td>
+    </tr></tbody>
+  <tfoot>
+    <tr><th><font><font>3人</font></font></th>
+    <th><font><font>2批准</font></font></th>
+    <th></th>
+  </tr></tfoot>
+</table>
+  </body>   
+  <script>
+      $(".message .close").on("click",function(){
+        $(this).closest('.message').transition('fade');
+      });
+      $('table').tablesort();
+  </script> 
+</html>

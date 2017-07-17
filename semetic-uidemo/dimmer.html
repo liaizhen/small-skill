@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="semantic/dist/semantic.css">
+    <title>menu</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+      <div class="ui segment">
+        <h3 class="ui header">
+          Overlayable Section
+        </h3>
+        <div class="ui small images">
+          <img src="image/fade1.png" alt="">
+        </div>
+        <p></p>
+      </div>
+      <div class="ui ignored ignored icon buttons">
+        <div class="ui show button"><i class="plus icon"></i></div>
+        <div class="ui hide button"><i class="minus icon"></i></div>
+     </div>
+     <div class="ui segment">
+        <h3 class="ui header">
+          Overlayable Section
+        </h3>
+        <div class="ui small images">
+          <img src="image/fade1.png" alt="">
+        </div>
+        <p></p>
+        <div class="ui dimmer">
+          <div class="content">
+            <div class="center">
+              <h2 class="ui inverted icon header">
+                <i class="heart icon"></i>Dimmed Message!
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui ignored ignored icon buttons">
+        <div class="ui show button"><i class="plus icon"></i></div>
+        <div class="ui hide button"><i class="minus icon"></i></div>
+     </div>
+     <div class="ui segment">
+       <div class="ui button"><i class="add icon"></i>show</div>
+       <div class="ui page dimmer">
+       <div class="content">
+         <div class="center">Hello</div>
+       </div>
+     </div>
+     </div>
+      <div class="ui segment">
+        <h3 class="ui header">
+          Overlayable Section
+        </h3>
+        <div class="ui small images">
+          <img src="image/fade1.png" alt="">
+        </div>
+        <p></p>
+        <div class="ui blurring segment">
+          <div class="ui dimmer"></div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div class="ui ignored ignored icon buttons">
+        <div class="ui show button"><i class="plus icon"></i></div>
+        <div class="ui hide button"><i class="minus icon"></i></div>
+     </div>
+  </body>   
+  <script>
+     $('.ui.show.button').on('click',function(){
+       $(this).parent().prev().dimmer('show');
+      
+     });
+     $('.ui.hide.button').on('click',function(){
+         $(this).parent().prev().dimmer('hide');
+     });
+       $('.ui.button').on('click',function(){
+         $(this).next('.ui.page.dimmer').dimmer('toggle');
+     });
+    
+     $('.ui.show.button').on('click',function(){
+       $(this).parent().prev('.ui.blurring.segment').dimmer('show');
+      
+     });
+     $('.ui.hide.button').on('click',function(){
+         $(this).parent().prev('.ui.blurring.segment').dimmer('hide');
+     });
+  </script> 
+</html>

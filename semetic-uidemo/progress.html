@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="semantic/dist/semantic.css">
+    <title>menu</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+    <div class="ui teal progress" id="pro">
+      <div class="bar"></div>
+      <div class="label">22%</div>
+    </div>
+      <div class="ui teal progress" id="pro1">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+        <div class="label">Adding Photos</div>
+      </div>
+<!--
+      <div class="ui indicating progress" data-value="1" data-total="20" id="example4">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+        <div class="label">Adding Photos</div>
+      </div>-->
+      <a class="ui button">Rapidly Update </a>
+        <div class="ui indicating progress" data-value="1" data-total="200" id="example5">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+        <div class="label">Waiting for you to press button</div>
+</div>
+  </body>   
+  <script>
+//      $("#pro").progress({
+//        percent:22
+//      });
+//      $('#pro1')
+//   .progress('30%')
+// ;
+// $('#example3')
+//   .progress({
+//     total: 3
+//   })
+// ;
+// $('#example4')
+//   .progress('5%')
+// ;
+$(".ui.button").on('click',function(){
+   var prog=$(".ui.indicating.progress"),btn= $(this), updateEvent;
+   console.log(prog);
+   clearInterval(window.fakeProgress);
+   prog.progress('reset');
+   window.fakeProgress=setInterval(function(){
+      prog.progress('increment');
+     btn.text(prog.progress('get value'));
+     if(prog.progress('is complete')){
+         clearInterval(window.fakeProgress);
+     }
+   },10);
+});
+$('.ui.indicating.progress').progress({
+  duration:200,
+  total:200,
+  text:{
+    active:'{value} of {total} done'
+  }
+});
+// $('.rapid.example .ui.button')
+//   .on('click', function() {
+//     var
+//       $progress       = $('.rapid.example .ui.progress'),
+//       $button         = $(this),
+//       updateEvent
+//     ;
+//     // restart to zero
+//     clearInterval(window.fakeProgress)
+//     $progress.progress('reset');
+//      // updates every 10ms until complete
+//     window.fakeProgress = setInterval(function() {
+//       $progress.progress('increment');
+//       $button.text( $progress.progress('get value') );
+//       // stop incrementing when complete
+//       if($progress.progress('is complete')) {
+//         clearInterval(window.fakeProgress)
+//       }
+//     }, 10);
+//   })
+// ;
+// $('.rapid.example .ui.progress')
+//   .progress({
+//     duration : 200,
+//     total    : 200,
+//     text     : {
+//       active: '{value} of {total} done'
+//     }
+//   })
+// ;
+  </script> 
+</html>
